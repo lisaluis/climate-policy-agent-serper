@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Climate Policy Agent | India</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero"><div class="eyebrow">MULTI-SOURCE POLICY RESEARCH</div>
+<h1>Climate Policy Agent</h1>
+<p>Explore web evidence and policy options for climate change, air pollution and environmental issues in India, including Goa.</p></header>
+<main class="container">
+<section class="panel"><form id="ask-form">
+<label for="question">What policy question do you want to explore?</label>
+<textarea id="question" minlength="5" maxlength="500" required placeholder="Example: What policies could help Goa reduce air pollution while supporting sustainable tourism?"></textarea>
+<div class="controls"><div><label for="location">Geographic focus</label>
+<select id="location"><option>India</option><option>Goa, India</option><option>Maharashtra, India</option><option>National policy in India</option></select></div>
+<button id="submit" type="submit">Search evidence &amp; recommend</button></div>
+<p class="hint">The API key stays on the server. Verify sources before relying on recommendations.</p>
+</form><div id="status" role="status" aria-live="polite"></div></section>
+<section id="results" hidden>
+<div class="section-heading"><div class="eyebrow">RESULTS</div><h2>Policy recommendations</h2></div><div id="recommendations" class="recommendations"></div>
+<div class="section-heading"><div class="eyebrow">SOURCE REVIEW</div><h2>Evidence found on the web</h2></div><div id="evidence" class="evidence-list"></div>
+<div class="section-heading"><div class="eyebrow">TRANSPARENCY</div><h2>Limitations</h2></div><ul id="limitations" class="limitations"></ul><p id="method" class="method"></p>
+</section><footer>Research-support prototype · Not a substitute for official advice or full policy evaluation.</footer>
+</main><script src="app.js"></script></body></html>
